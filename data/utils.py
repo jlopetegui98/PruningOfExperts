@@ -2,8 +2,8 @@ import torch
 import itertools
 from datasets import load_dataset
 from transformers import PreTrainedTokenizer, default_data_collator
-from transformers.utils import logging
-from transformers.utils.logging import CaptureLogger
+from transformers.testing_utils import CaptureLogger
+import transformers
 
 DATASETS = {
     'c4': lambda: load_dataset('json', data_files={'train': 'drive/MyDrive/LLMs_MVA/Final_Project/c4-train.00000-of-01024.json'}),

@@ -12,7 +12,8 @@ from transformers.models.mixtral.modeling_mixtral import (
 import bitsandbytes as bnb
 from bitsandbytes.nn import Params4bit, Linear4bit
 from bitsandbytes.functional import dequantize_4bit, quantize_4bit
-from bitsandbytes.quant_state import QuantState
+from bitsandbytes.functional import QuantState
+
 
 
 class PrunableMixtralSparseMoeBlockWrapper(torch.nn.Module):
