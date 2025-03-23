@@ -1,1 +1,1 @@
-from .wrapper import PrunableMixtralSparseMoeBlockWrapper
+from .wrapper import PrunableMixtralSparseMoeBlockWrapper, PrunableDeepseekMoEWrapper
