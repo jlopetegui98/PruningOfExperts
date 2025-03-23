@@ -12,7 +12,7 @@ from bitsandbytes.functional import dequantize_4bit, quantize_4bit
 from bitsandbytes.functional import QuantState
 import random
 import math
-import tqdm
+from tqdm import tqdm
 
 
 class PrunableMixtralSparseMoeBlockWrapper(torch.nn.Module):
